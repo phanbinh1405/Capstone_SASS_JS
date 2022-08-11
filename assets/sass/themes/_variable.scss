@@ -8,9 +8,31 @@ $c1-background-gray: #DEDDDC;
 $c2-background-gray: #F8F8F8;
 $c3-background-gray: #ECECEC;
 $c4-background-gray: #EDF9EE;
+$c5-background-gray: #CCCCCC;
 $color-red: #F50E0E;
+$color-red2: #FC0303;
 $color-submit: #AE18E2;
 $color-green: #1ED90E;
+
+
+$color-UD:linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%); //UP Down
+$color-addbutton:linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
 $text-color-white: #F6F6F6;
 
 $main-font: 'Inter';
+
+// font
+$text-base:16px;
+$text-xl: 24px;
+$text-2xl: 30px;
+
+//
+@mixin text($fz,$fw,$c){
+    font-size: $fz;
+    font-weight: $fw;
+    color: $c;
+}
+//font weigt
+$text-thin:200;
+$text-light:300;
+$text-semiBold:600;
