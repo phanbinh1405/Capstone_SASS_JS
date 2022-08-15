@@ -1,0 +1,48 @@
+.form {
+    &-gender{
+        width: 40px;
+        height: 40px;
+        margin-right: 40px;
+        margin: -5px 10px 0 0;
+    }
+    &-genderOut{
+        margin-left: -22px;
+        font-size: $text-xl;
+        font-weight: $text-semi;
+    }
+    &-control{
+        border-radius: 0%;
+        border: none;
+        border-bottom: 3px solid $color-submit;
+    }
+    &-label{
+        position: absolute;
+    }
+    .row{
+        padding: 15px 20px;
+    }
+    &-row input{
+        position: relative;
+        font-size: $text-xl;
+        font-weight: $text-semi;
+    }
+    &-row input:focus {
+        outline:none !important;
+        box-shadow: none;
+        border-bottom:3px solid $color-submit ;
+    }
+
+    &-submit button{
+        padding: 5px 45px;
+        background: $color-submit;
+        color:white;
+        border: none;
+    }
+    &-span{
+        position: relative;
+        top:-38px;
+        left: 510px;
+        font-weight: $text-semi;
+    }
+
+}
