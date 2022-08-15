@@ -23,6 +23,13 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+
+    <script type="text/javascript">
+      $('#target').click(function() {
+        $('#output').html(function(i, val) { return val*1+1 });
+      });
+    </script>
     <!-- HEADER -->
     <header class="header" id="header">
       <div class="container-xl p-0">
@@ -31,7 +38,7 @@
           <div class="header__menu-top d-flex align-items-center">
             <div class="header__cart d-flex align-items-center">
               <img src="../assets/images/cart-logo.png" alt="" />
-              <span>(1)</span>
+              <div >(1)</div>
             </div>
             <a href="#">Login</a>
             <a href="./register.html">Register</a>

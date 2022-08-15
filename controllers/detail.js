@@ -11,7 +11,7 @@ const renderProductList = (products) => {
                   </div>
                 </a>
                 <div class="card-footer mt-auto d-flex align-items-strech w-100 p-0">
-                  <a class="card-button" href="#" style="width: 50%">Buy now</a>
+                  <a class="card-button" href="./detail.html?productid=${product.id}" style="width: 50%">Buy now</a>
                   <p class="m-0 text-center card-price" style="width: 50%">${product.price}$</p>
                 </div>
               </div>
