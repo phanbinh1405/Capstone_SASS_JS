@@ -92,16 +92,24 @@ body {
   top: 0;
   left: 0;
   z-index: 10;
-  animation: moveDown 0.6s;
+  -webkit-animation: moveDown 0.6s;
+          animation: moveDown 0.6s;
+}
+
+@-webkit-keyframes moveDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes moveDown {
   0% {
-    -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
   }
   100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -380,3 +388,48 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.form-gender {
+  width: 40px;
+  height: 40px;
+  margin-right: 40px;
+  margin: -5px 10px 0 0;
+}
+.form-genderOut {
+  margin-left: -22px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.form-control {
+  border-radius: 0%;
+  border: none;
+  border-bottom: 3px solid #AE18E2;
+}
+.form-label {
+  position: absolute;
+}
+.form .row {
+  padding: 15px 20px;
+}
+.form-row input {
+  position: relative;
+  font-size: 24px;
+  font-weight: 400;
+}
+.form-row input:focus {
+  outline: none !important;
+  box-shadow: none;
+  border-bottom: 3px solid #AE18E2;
+}
+.form-submit button {
+  padding: 5px 45px;
+  background: #AE18E2;
+  color: white;
+  border: none;
+}
+.form-span {
+  position: relative;
+  top: -38px;
+  left: 510px;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
