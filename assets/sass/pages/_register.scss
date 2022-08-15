@@ -83,6 +83,10 @@ $gg-color:#d34836;
       padding: 10px 20px;
       font-size: $text-base;
     }
+    i{
+      margin-right:-10px;
+      padding-left: 20px;
+    }
   }
   .register_signupGG{
     background: $gg-color;
@@ -95,5 +99,26 @@ $gg-color:#d34836;
       padding: 10px 20px;
       font-size: $text-base;
     }
+    i{
+      margin-right:-10px;
+      padding-left: 20px;
+    }
   }
+}
+@media screen and (max-width: 992px) {
+  .register-signup span{
+    display: block;
+  }
+  .register-signupFB i{
+    margin-left: -25px;
+  }
+  .register_signupGG i{
+    margin-left: -25px;
+  }
+}
+@media screen and (max-width: 576px){
+  .register-signup{
+    margin-top: 30px;
+  }
+
 }
