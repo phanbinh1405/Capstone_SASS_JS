@@ -1,6 +1,3 @@
-const toggleMenu = document.querySelector('.toggle-menu');
-const menuPopup = document.querySelector('.menu__popup');
-const headerElement = document.querySelector('#header');
 
 const getProducts = async () => {
   try {
@@ -36,23 +33,6 @@ const renderProduct = (products) => {
   document.querySelector('#product__container').innerHTML = html;
 };
 
-toggleMenu.addEventListener('click', () => {
-  document.querySelector('.menu__popup').classList.toggle('show-menu');
-})
-
-document.onclick = function (e) {
-  if (!toggleMenu.contains(e.target) && !menuPopup.contains(e.target)) {
-    document.querySelector('.menu__popup').classList.remove('show-menu');
-  } 
-};
-
 window.addEventListener('load', () => {
   getProducts();
-});
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 0) {
-    headerElement.classList.add('fixed-header');
-  } else {
-    headerElement.classList.remove('fixed-header');
-  }
 });
