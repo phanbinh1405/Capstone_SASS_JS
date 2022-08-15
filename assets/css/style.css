@@ -399,4 +399,36 @@ body {
 
 .register-btn {
   margin-top: 30px;
+}
+
+.register-signup {
+  margin-top: -40px;
+}
+.register-signup span {
+  font-size: 24px;
+  font-weight: 300;
+}
+.register-signup .register-signupFB {
+  background: #3b5998;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+}
+.register-signup .register-signupFB span {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.register-signup .register_signupGG {
+  background: #d34836;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+}
+.register-signup .register_signupGG span {
+  padding: 10px 20px;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */

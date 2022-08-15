@@ -1,5 +1,7 @@
 $sub-color: grey;
 $main-color: black;
+$fb-color:#3b5998;
+$gg-color:#d34836;
 
 @mixin shrinkLabel {
   top: -14px;
@@ -63,4 +65,35 @@ $main-color: black;
 
 .register-btn {
   margin-top: 30px;
+}
+.register-signup {
+  margin-top: -40px;
+  span{
+    font-size: $text-xl;
+    font-weight: $text-light;
+  }
+  .register-signupFB{
+    background: $fb-color;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    span{
+      padding: 10px 20px;
+      font-size: $text-base;
+    }
+  }
+  .register_signupGG{
+    background: $gg-color;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    span{
+      padding: 10px 20px;
+      font-size: $text-base;
+    }
+  }
 }
